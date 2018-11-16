@@ -277,16 +277,16 @@ nav h1 a {
 @media only screen and (max-width: 599px) {
 /* ====================== Small View Restaurant Details ====================== */
 nav h1 a {
-    letter-spacing: 4.0px;
+    letter-spacing: 3.0px;
     line-height: 4.0;
     font-size: 105%;
     width: 100%;
   }
-  #breadcrumb {
+  .inside #breadcrumb {
     padding: 10px 8px 10px;
     width: 100%;
   }
-  #breadcrumb li {
+  .inside #breadcrumb li {
     font-size: 100%;
   }
   .inside #map-container {
@@ -295,27 +295,27 @@ nav h1 a {
     top: 125px;
     height: 12%;
   }
-  #restaurant-container{
+  .inside #restaurant-container{
   padding: 395px 0px 10px 0px;
   width: 80%;
   }
-  #restaurant-name {
+  .inside #restaurant-name {
     font-size: 150%;
     padding-bottom: 5px;
     padding-top: 5px;
     margin-top: 10px;
     margin-left: 10px;
   }
-  #restaurant-img {
+  .inside #restaurant-img {
     margin-left: 10px;
   }
-  #restaurant-cuisine {
+  .inside #restaurant-cuisine {
     margin-left: 10px;
   }
-  #restaurant-address {
+  .inside #restaurant-address {
     margin-left: 10px;
   }
-  #restaurant-hours {
+  .inside #restaurant-hours {
     margin-left: 10px;
   }
   .inside #maincontent {
@@ -324,14 +324,14 @@ nav h1 a {
     flex-direction: column;
     align-items: center;
   }
-  #reviews-container {
+  .inside #reviews-container {
     width: 75%;
   }
   .inside #footer {
     margin-top: 20px;
     width: 90%;
     }
-  #reviews-list li {
+  .inside #reviews-list li {
     width: 90%;
     box-shadow: 0 0 2px 2px black;
     border-top-left-radius: 10px;
@@ -341,7 +341,7 @@ nav h1 a {
     display: flex;
     flex-wrap: wrap;
   }
-  #name {
+  .inside #name {
     background: black;
     color: white;
     padding-left: 10px;
@@ -349,14 +349,14 @@ nav h1 a {
     width: 100%;
     flex: 33.33%;
   }
-  #date {
+  .inside #date {
     background: black;
     color: #CBCBCB;
     text-align: right;
     width: 100%;
     flex: 33.33%;
   }
-  #rating {
+  .inside #rating {
     background: #F2A83A;
     color: white;
     width: 30%;
@@ -364,10 +364,37 @@ nav h1 a {
     border-left-color: #fff;
     border-left-style: solid;
   }
-  #comments {
+  .inside #comments {
     padding-left: 10px;
     padding-right: 5px;
   }
 /* ====================== Small View Main Page ====================== */
+  .filter-options {
+    height: 140px;
+  }
 
+  #neighborhoods-select, #cuisines-select {
+    width: 94%;
+  }
+
+  .filter-options h2 {
+    padding-top: 3%;
+  }
+
+  #restaurants-list .restaurant-img {
+    border-radius: 10px;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  #restaurants-list li {
+    padding: 10% 10% 0;
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #restaurants-list li a {
+    margin: 10%;
+  }
 }
