@@ -161,6 +161,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name + ' restaurant image';  // add alt attribute for image description
   li.append(image);
 
   const name = document.createElement('h1');
@@ -178,6 +179,8 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '4'; // add tab index for View Details button
+  more.setAttribute("role", "button");//set id attribute to "button"
   li.append(more)
 
   return li
