@@ -6,8 +6,11 @@ nav h1 a {
     font-size: 105%;
     width: 100%;
   }
+  .inside #breadcrumb {
+    display: flex;
+  }
   .inside #restaurant-container{
-  width: 45%;
+    width: 45%;
   }
   .inside #reviews-container {
     width: 42%;
